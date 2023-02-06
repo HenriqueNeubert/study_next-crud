@@ -1,5 +1,6 @@
 import styles from '../styles/Estiloso.module.css'
 import Link from 'next/link'
+import Layout from "../components/Layout"
 
 export default function Estiloso() {
    return (
@@ -7,9 +8,11 @@ export default function Estiloso() {
       <Link href="/">
         Voltar
       </Link>
-      <h1 className={styles.red}>
-        Estilo usando css modulos
-      </h1>
+      <Layout titulo="Titulo teste">
+        <h1 className={styles.red}>
+          Estilo usando css modulos
+        </h1>
+      </Layout>
     </div>
    )
 } 
