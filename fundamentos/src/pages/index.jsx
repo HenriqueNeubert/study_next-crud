@@ -1,8 +1,14 @@
+import Link from 'next/link'
+
 export default function Inicio() {
   return (
     <div>
-      <h1 className="teste">Titulo</h1>
-      <h2>Subtitulo</h2>
+      <Link href="/estiloso">
+        Estiloso
+      </Link>
+      <Link href="/exemplo">
+        Exemplo
+      </Link>
     </div>
   )
 }
